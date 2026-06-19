@@ -1,0 +1,8 @@
+# 期刊全文 PDF 有版權，一律不進版本庫（只保留 PMID/DOI 連結）
+*.pdf
+
+# OS / 編輯器雜物
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
