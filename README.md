@@ -19,7 +19,9 @@ SGLT2i 在第 1 型糖尿病的取捨是 **不對稱** 的：
 | 檔案 | 內容 |
 |---|---|
 | [`整理_自學讀本_T1DM_SGLT2i.md`](整理_自學讀本_T1DM_SGLT2i.md) | **主成品**。完整自學讀本：指引、證據表、利弊、實務、文獻清單（含查證等級與對抗查核註記） |
-| [`網誌草稿_T1DM_SGLT2i.md`](網誌草稿_T1DM_SGLT2i.md) | 衛教網誌草稿的 markdown 版（供閱讀／版本追蹤） |
+| [`網誌草稿_T1DM_SGLT2i.md`](網誌草稿_T1DM_SGLT2i.md) | 衛教網誌的 markdown **鏡像**（供閱讀／版本追蹤）。**由 `blog-html-to-md.py` 從成品 HTML 自動轉出，請勿手動改。** |
+| [`blog-html-to-md.py`](blog-html-to-md.py) | 把 OneDrive 的網誌成品 HTML 轉成上面的 md 鏡像（網誌以 HTML 為真實來源） |
+| [`sync-to-onedrive.sh`](sync-to-onedrive.sh) | 把文獻整理 md 從 repo 單向推回 OneDrive |
 | [`CHANGELOG.md`](CHANGELOG.md) | 每次更新的版本記錄 |
 
 文獻清單（PMID + PubMed/試驗登錄連結）在自學讀本第七節。
@@ -27,13 +29,24 @@ SGLT2i 在第 1 型糖尿病的取捨是 **不對稱** 的：
 ## 版本控制與檔案慣例
 
 - **版本庫只放文字。** 期刊全文 PDF 有版權，由 `.gitignore` 排除，永遠不進 repo；引用一律走 PMID/DOI 連結。
-- **這個 repo 是 markdown 的真實來源。** 之後更新內容請改這裡的 `.md`，再 commit，`git log` 即完整版本史。
-- **改完用 `sync-to-onedrive.sh` 把 md 推回 OneDrive**（單向：repo → OneDrive，不反向）：
+- **兩種真實來源，分開處理（這是同步的關鍵，先前曾因混淆而脫鉤）：**
+  - **文獻整理（自學讀本）→ repo 的 `整理_自學讀本_*.md` 為真實來源。** 改它 → commit → `sync-to-onedrive.sh` 推回 OneDrive。其 OneDrive `.html` 是手動衍生的閱讀版。
+  - **網誌 → OneDrive 的成品 `*.html` 為真實來源**（你在那裡微調表格／欄寬、上 Blogger）。改完／發佈後跑 `blog-html-to-md.py` 重生成 repo 的 `網誌草稿_*.md` 鏡像，再 commit。**不要手動改網誌 md**，會被下次轉出覆蓋。
+- **文獻整理改完：commit，再單向推回 OneDrive**：
   ```
   cd ~/t1dm-sglt2i
-  # 改 .md、補一行 CHANGELOG
+  # 改 整理_自學讀本_*.md、補一行 CHANGELOG
   git add -A && git commit -m "校正 XX" && git push
   bash sync-to-onedrive.sh        # 預覽差異後確認覆蓋；加 -y 直接覆蓋
+  ```
+- **網誌改完／發佈後：把成品 HTML 轉回 md 鏡像再 commit**：
+  ```
+  cd ~/t1dm-sglt2i
+  python3 blog-html-to-md.py \
+    --html "$HOME/OneDrive/Blog and FB/_drafts/_archive/20260619 第一型糖尿病 SGLT2 抑制劑心腎保護.html" \
+    --out 網誌草稿_T1DM_SGLT2i.md \
+    --url https://hanwenliu.blogspot.com/2026/06/1-sglt2.html
+  git add -A && git commit -m "網誌：同步 md 鏡像" && git push
   ```
 - **產出物留在 OneDrive：**
   - 上 Blogger 的成品 HTML（含 `.t1sg-article` CSS）：`~/OneDrive/Blog and FB/_drafts/20260619 第一型糖尿病 SGLT2 抑制劑心腎保護.html`。HTML 為 OneDrive-only、手動維護，從 OneDrive 開啟即可預覽，不上 git、不做 GitHub Pages。
