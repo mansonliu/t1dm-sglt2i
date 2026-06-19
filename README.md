@@ -46,4 +46,4 @@ SGLT2i 在第 1 型糖尿病的取捨是 **不對稱** 的：
 - 寫前先 extract-with-quote，把數字釘回原文句子；RWD 的分組 HR 一定回讀原文 PDF（見 CHANGELOG v4 校正）。
 - 藥物學名用英文，不音譯；單位用台灣慣例。
 
-> 內容定位仍是「自學讀本＋網誌草稿」，網誌尚未上 Blogger。詳細交班見 OneDrive 兩份 HANDOFF。
+> 網誌已上 Blogger（LIVE，2026-06-19）：<https://hanwenliu.blogspot.com/2026/06/1-sglt2.html>，標題「第 1 型糖尿病用 SGLT2 抑制劑的心腎保護證據」，並已加入「糖尿病」分類頁。詳細交班見 OneDrive `_drafts/_archive/` 的 HANDOFF。
