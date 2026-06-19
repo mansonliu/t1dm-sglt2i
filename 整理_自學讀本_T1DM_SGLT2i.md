@@ -116,7 +116,7 @@
 > 回應「近年 PubMed 有沒有做 T1DM 尿蛋白」的提問。重新搜尋（255 筆）後確認：**沒有以白蛋白尿為終點的 RCT，但 2025–2026 已有真實世界世代直接看 T1DM 的腎臟與蛋白尿**，方向一致。
 
 - **Caramori 2026（Diabetes Obes Metab，PMID 41816887）**：最直接測 T1DM 蛋白尿的一篇。美國 Optum Market Clarity 資料庫、T1DM＋CKD、傾向分數配對，253 人有足夠資料分析 UACR（基線中位 60.8 mg/g）。使用心腎代謝藥物者達 ≥30% UACR 下降的時間較短，整體（GLP-1RA 和/或 SGLT2i）**HR 0.76（95% CI 0.61–0.95，p=0.016）**；低血糖與 DKA 未增加。⚠️ **校正（2026-06-19 回讀原文 PDF）**：該研究有把藥物拆組，**單用 SGLT2i 亦達顯著：HR 0.71（0.51–0.98，p=0.039）**（效果主要見於基線已有白蛋白尿者）；單用 GLP-1RA HR 0.71（0.52–0.97）；兩者併用 HR 0.82（0.56–1.20，未顯著、n=61）。**故先前「UACR 降幅不能單獨歸因於 SGLT2i」的寫法有誤**——SGLT2i 單用即有顯著訊號（惟仍為觀察性、人數少）。作者明言「至今尚無 RCT 報告此族群腎功能結果」，呼籲 RCT 確認。
-- **Wang CA 2026（Diabetes Res Clin Pract，PMID 42049097，台灣團隊；與第七節 Wang WT 回顧為不同篇）**：TriNetX、T1D 透析後急性腎損傷 16,680 人。SGLT2i 使用者**全因死亡 aHR 0.49（0.36–0.71）、主要不良腎臟事件 aHR 0.53（0.34–0.82）**，MACE 無顯著差異（aHR 0.86）；生殖道感染與容積不足較多，DKA 未顯著增加。
+- **Wang CA 2026（Diabetes Res Clin Pract，PMID 42049097，台灣團隊；與第七節 Wang WT 回顧為不同篇）**：⚠️ **族群特殊、不可外推到一般 T1DM**。TriNetX 真實世界世代，收的是**「歷經需透析的急性腎損傷（dialysis-requiring acute kidney injury, AKI-D）並存活出院」的第 1 型糖尿病人** 16,680 人（原標題："patients with type 1 diabetes after dialysis-requiring acute kidney injury"；非「透析後才發生的 AKI」——透析是該次 AKI 的治療）。出院後用 SGLT2i 者（614 人，3.74%）**全因死亡 aHR 0.49（0.36–0.71）、主要不良腎臟事件（MAKE）aHR 0.53（0.34–0.82）**，MACE 無顯著差異（aHR 0.86）；生殖道感染與容積不足較多，DKA 未顯著增加。**適用性註記**：此為 AKI-D 存活者這個極窄的重症次族群（且 TriNetX 約半數為白人），與本讀本主軸「一般 T1DM 的心腎保護」不是同一群病人；數字本身對全文 verbatim，但**屬於不宜直接外推的旁證**，網誌定稿版已據此剔除。
 - **Pandey 2026（Diabetes Obes Metab，PMID 41804205）**：同團隊姊妹作（Optum Market Clarity，9840 人＝GLP-1RA only 6285／SGLT2i only 1891／both 1664，加權對照）。⚠️ **校正（2026-06-19 回讀原文 PDF）**：先前把 DKA 安全終點誤當成「併用組 MACE」、且漏列 SGLT2i 單用組。正確的 **MACE（efficacy）**：整體 CKM **HR 0.83（0.73–0.95，p=0.01）**；單用 GLP-1RA **HR 0.72（0.59–0.88）**；**單用 SGLT2i HR 0.77（0.59–1.01，p=0.05，未達顯著）**。前述「7.1% vs 11.1%、HR 0.73（0.67–0.79）」其實是**整體 CKM 組的 DKA 安全終點**，不是 MACE、也不是併用組。另：**SGLT2i 單用組 DKA HR 1.07（0.92–1.24，未顯著）**——與試驗的 DKA 升高方向不一致，可能受 channeling／180 天追蹤截斷影響，安全結論仍以 RCT／meta 為準。
 - **Abdel-Rahman 2026 統合分析（Diabetes Obes Metab，PMID 41605813）**：90 篇。SGLT2i 在 T1D **腎臟參數穩定或改善**、CV 事件罕見，但 **DKA 風險 RR 2.19（95% CI 1.16–4.17，主要發生在可預期的臨床情境）**；GLP-1RA 腎／CV 結果中性。
 - **回顧與展望**：Tuttle 2026（DOM，PMID 41054018）——近 1/3 的 T1D 有 CKD，卻幾乎被排除在 SGLT2i／nsMRA／GLP-1RA 等 CKD 新藥開發外，主張為 T1D 做專屬試驗；Kugathasan/Cherney 2025（Expert Rev Clin Immunol，PMID 40693871，**僅摘要，全文確認取不到**）——整理把 T2D 腎保護療法 repurpose 到 T1D 的依據；**Steno 1 study（Stougaard 2025，DOM，PMID 40726451）——進行中 RCT：丹麥多中心叢集隨機、2000 名高風險 T1D，多因子介入＝semaglutide＋sotagliflozin＋finerenone vs 標準照護，終點為 MACE／HHF／CKD 進展／死亡（目前僅 protocol，是 T1D 第一個直接測**心血管硬終點**的前瞻介入試驗，值得追蹤）。**
@@ -181,7 +181,7 @@
 
 2. **真實世界安全性／心腎**
    - Bakhsh 2026（Diabetes Care）：T1D 中**單純 eGFR 下降（30–90）並未增加 DKA 風險**→支持進一步研究 SGLT2i 對特定 T1D 的腎臟保護。此與「腎功能差＝更不敢用」的直覺相反，是重要訊號。
-   - 另有 T1D 透析後 AKI 使用 SGLT2i 的世代研究（Diabetes Res Clin Pract 2026）。
+   - 另有需透析的急性腎損傷（AKI-D）存活的 T1D 病人出院後使用 SGLT2i 的世代研究（Wang CA 2026, Diabetes Res Clin Pract）——惟屬重症次族群，不可外推到一般 T1DM（見 C-2）。
 
 3. **配新科技安全使用（降低 DKA）**
    - Lawton 2026（DTT）：**連續血酮監測（CKM）**可抓到 empagliflozin／低碳飲食／運動誘發的酮症——呼應「不能只看血糖」的安全策略。
@@ -240,7 +240,7 @@ _直接看 T1DM 心腎替代指標：_
 
 **T1DM 腎臟／蛋白尿近年真實世界資料（2026-06-15 補搜；6 篇已抓全文逐字核對 2026-06-16；PMID 已核對）**
 - Caramori ML, et al.（T1D+CKD，UACR 下降）Diabetes Obes Metab 2026;28(5):4344–4351. PMID 41816887 ✅全文
-- Wang CA, et al.（T1D 透析後 AKD，腎事件/死亡↓，台灣）Diabetes Res Clin Pract 2026;236:113277. PMID 42049097 ✅全文
+- Wang CA, et al.（T1D 需透析急性腎損傷 AKI-D 存活者，腎事件/死亡↓；重症次族群、不可外推，台灣）Diabetes Res Clin Pract 2026;236:113277. PMID 42049097 ✅全文
 - Pandey A, et al.（T1D off-label 用藥與 CV 事件）Diabetes Obes Metab 2026;28(5):4352–4355. PMID 41804205 ✅全文
 - Abdel-Rahman SM, et al.（GLP-1RA/SGLT2i adjunct 統合分析 90 篇）Diabetes Obes Metab 2026;28(4):3165–3181. PMID 41605813 ✅全文
 - Tuttle KR, et al.（T1D CKD 未滿足需求 回顧）Diabetes Obes Metab 2026;28(1):16–26. PMID 41054018 ✅全文
