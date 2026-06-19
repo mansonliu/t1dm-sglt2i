@@ -28,8 +28,15 @@ SGLT2i 在第 1 型糖尿病的取捨是 **不對稱** 的：
 
 - **版本庫只放文字。** 期刊全文 PDF 有版權，由 `.gitignore` 排除，永遠不進 repo；引用一律走 PMID/DOI 連結。
 - **這個 repo 是 markdown 的真實來源。** 之後更新內容請改這裡的 `.md`，再 commit，`git log` 即完整版本史。
+- **改完用 `sync-to-onedrive.sh` 把 md 推回 OneDrive**（單向：repo → OneDrive，不反向）：
+  ```
+  cd ~/t1dm-sglt2i
+  # 改 .md、補一行 CHANGELOG
+  git add -A && git commit -m "校正 XX" && git push
+  bash sync-to-onedrive.sh        # 預覽差異後確認覆蓋；加 -y 直接覆蓋
+  ```
 - **產出物留在 OneDrive：**
-  - 上 Blogger 的成品 HTML（含 `.t1sg-article` CSS）：`~/OneDrive/Blog and FB/_drafts/20260619 第一型糖尿病 SGLT2 抑制劑心腎保護.html`
+  - 上 Blogger 的成品 HTML（含 `.t1sg-article` CSS）：`~/OneDrive/Blog and FB/_drafts/20260619 第一型糖尿病 SGLT2 抑制劑心腎保護.html`。HTML 為 OneDrive-only、手動維護，從 OneDrive 開啟即可預覽，不上 git、不做 GitHub Pages。
   - 自學讀本的 HTML 閱讀版、全文 PDF、下載清單：`~/OneDrive/Medicine/01 Diabetes Melitus/T1DM SGLT2i 文獻/`
 - repo 刻意 **不放在 OneDrive 內**——OneDrive 同步會在 git 操作中途搬動 `.git`，跨機器易弄壞版本庫。
 
